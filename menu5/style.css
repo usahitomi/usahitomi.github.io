@@ -1,0 +1,84 @@
+.container {
+  display: grid;
+  width: 1300px;
+  height: 100vh;
+  grid-template-rows: 100px 450px auto 350px 100px;;
+  margin: 0 auto;
+  gap: 30px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 60px;
+  color: brown;
+  margin-top: 30px;
+  margin: 5px;
+}
+
+
+.header ul, .footer ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-between;
+  margin: 30px 90px;
+}
+
+.header ul li {
+  font-size: 22px;
+  margin: 0;
+}
+.header ul li a, footer ul li a {
+  text-decoration: none;
+  color: brown;
+}
+
+.header ul li:hover  {
+  opacity: 0.5;
+}
+
+.syokupan {
+  display: grid;
+  width: 800px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 300px;
+  gap:10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.photo_1 {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0 auto;
+}
+
+.text {
+  grid-template-columns: 2;
+  grid-row: 2;
+}
+ 
+
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0; 
+}
+
+.footer ul {
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.footer ul li:hover {
+  opacity: 0.5;
+}
