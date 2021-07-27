@@ -82,3 +82,32 @@ h2 {
 .footer ul li:hover {
   opacity: 0.5;
 }
+
+/* モバイル用 */
+@media (max-width: 600px){
+  .container {
+    display: grid;
+    width: 600px;
+    height: 100vh;
+    grid-template-rows: 100px 450px auto 350px 100px;
+    margin: 0 auto;
+    gap: 30px 0;
+  }
+  
+  .header {
+    margin: 0 auto;
+  }
+  
+  .header h1 {
+    font-size: 60px;
+    color: brown;
+    margin-top: 30px;
+    margin: 5px;
+  }
+  
+  
+  .header ul, .footer ul {
+    display: none;
+  }
+  
+}

@@ -68,19 +68,23 @@ h2 {
 }
 .toast {
   border-bottom: 1px solid #000;
+  width: 300px;
+  margin-left: 0;
 }
  
 .drink {
   width: 800px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 65px 50px 200px;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 40px 40px 200px;
   gap: 10px 0;
   margin: 0 auto;
 }
 
 .drink h2 {
   border-bottom: 1px solid#000;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .hot {
@@ -113,4 +117,59 @@ p {
 }
 .footer ul li:hover {
   opacity: 0.5;
+}
+
+/* モバイル用 */
+@media (max-width: 600px){
+  .container {
+    display: grid;
+    width: 600px;
+    height: 100vh;
+    grid-template-rows: 100px 450px auto ;
+    margin: 0 auto;
+    gap: 30px 0;
+  }
+  
+  .header {
+    margin: 0 auto;
+  }
+  
+  .header h1 {
+    font-size: 60px;
+    color: brown;
+    margin-top: 30px;
+    margin: 5px;
+  }
+
+  .header ul, .footer ul {
+    display: none;
+  }
+
+  .eatin {
+    display: block;
+    width: 600px; 
+    grid-template-rows: 50px 300px;
+    margin: 0 auto;
+    gap:10px ;
+  }
+ 
+  .photo_1 {
+    margin-left: 100px;
+  }
+  
+  .text {
+   text-align: center;
+  }
+
+  .toast, .drink h2 {
+    width: 300px;
+    margin: 0 auto;
+  }
+   
+  .drink {
+    grid-template-rows: 40px 40px;
+    width: 600px;
+    gap: 20px 0;
+    margin-top: 20px;
+  }
 }
